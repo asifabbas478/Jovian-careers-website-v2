@@ -17,21 +17,24 @@
   </head>
   <body>
     <div class="container">
-     <h1>Jovian Carrers</h1>
+     <h1 class="text-center mt-2 mb-4" style="color:rgb(100,100,180)">Jovian Carrers</h1>
       <img class="img-responsive" id="banner" src="https://jovian-careers-website.asifabbas478.repl.co/static/banner.jpg"> 
-      <h2> About Jovian</h2>
-        <p>
+      <h2 class="text-center mt-2 mb-4"> About Jovian</h2>
+        <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum mattis justo, eu rutrum eros vestibulum eget. Aliquam condimentum imperdiet felis. Aenean tempor nisl et tellus vulputate maximus. Suspendisse arcu nulla, efficitur ut porta eu, tincidunt id dolor. Mauris eget interdum dolor. Morbi sed pellentesque leo. Etiam et elit at dui iaculis maximus quis non dolor. Aliquam eget orci sapien. Nam nec purus at sapien porttitor maximus nec quis lectus. Pellentesque scelerisque nunc egestas, tempor dui auctor, volutpat orci. Nullam in lacus et ex dignissim lacinia a vitae nisl.
         </p>
-        <h2>
+        <h2 class="text-center mt-2 mb-4">
           Open Positions
         </h2>
-        <p> TODO - Show the jobs here</p>
-      
-        <button>Contact Us</button>
-      <p>
-        CopyRight 2023
-      </p>
+        <div>
+          {% for job in jobs %}
+            {% include 'jobitem.html'%}
+          {% endfor %}
+        </div>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-6 mb-4" style="margin-top: 20px;">CopyRight 2023</p> 
+      </div>
     </div>
   </body>
 </html>

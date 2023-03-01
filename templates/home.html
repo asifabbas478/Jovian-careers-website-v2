@@ -11,20 +11,27 @@
         height: 360px;
         object-fit: cover;
         width: 100%;
+        margin-bottom:16px;
       }
     </style>
     
   </head>
   <body>
     {% include 'navbar.html'%}
+    <img class="img-responsive" id="banner" src="https://jovian-careers-website.asifabbas478.repl.co/static/banner.jpg">
     <div class="container">
-     <h1 class="text-center mt-2 mb-4" style="color:rgb(100,100,180)">Jovian Carrers</h1>
-      <img class="img-responsive" id="banner" src="https://jovian-careers-website.asifabbas478.repl.co/static/banner.jpg"> 
-      <h2 class="text-center mt-2 mb-4"> About Jovian</h2>
+     <h1 class="text-center mt-2 mb-4" style="color:rgb(128,128,128)">Jovian Carrers</h1>
+      <div class="row" style="margin-bottom:16px;">
+      <div class="col-md-7">
         <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum mattis justo, eu rutrum eros vestibulum eget. Aliquam condimentum imperdiet felis. Aenean tempor nisl et tellus vulputate maximus. Suspendisse arcu nulla, efficitur ut porta eu, tincidunt id dolor. Mauris eget interdum dolor. Morbi sed pellentesque leo. Etiam et elit at dui iaculis maximus quis non dolor. Aliquam eget orci sapien. Nam nec purus at sapien porttitor maximus nec quis lectus. Pellentesque scelerisque nunc egestas, tempor dui auctor, volutpat orci. Nullam in lacus et ex dignissim lacinia a vitae nisl.
         </p>
-        <h2 class="text-center mt-2 mb-4">
+      </div>
+        <div class="d-none d-md-block col-md-5">
+          <img src="/static/people.jpg" style="height:320px; border-radius:4px;">
+        </div>
+      </div>
+        <h2 class="text-center mt-2 mb-4"style="color:rgb(192,194,201)">
           Open Positions
         </h2>
         <div>
@@ -33,10 +40,10 @@
           {% endfor %}
         </div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-6 mb-4" style="margin-top: 20px;">CopyRight 2023</p> 
-        {% include 'footer.html'%}
+        <button class="btn btn-secondary btn-lg">Contact Us</button>
+        
       </div>
     </div>
+    {% include 'footer.html'%}
   </body>
 </html>

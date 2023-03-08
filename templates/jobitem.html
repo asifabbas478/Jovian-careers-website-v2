@@ -1,6 +1,6 @@
 <div class="pb-3 row" style="border-bottom: 0.2px solid black;margin-bottom:16px;padding-bottom:8px;">
     <div class="col-sm-9">
-      <h4 style="color:rgb(120,120,120); margin-bottom:4px;">{{job['job_title']}}</h4>
+      <h4 style="color:rgb(120,120,120); margin-bottom:4px;">{{job['title']}}</h4>
       <div>
         <b>Location: </b> {{job['location']}}
       </div>
@@ -11,6 +11,6 @@
       {% endif %}
     </div>
     <div class="col-sm-3" style="padding-top: 20px;"">
-    <a href="mailto:hello@jovian.ai?subject=Application for {{job['title']}}" type="button" class="btn btn-outline-secondary" >Apply</a>
+    <a href="/jobs/{{job['id']}}" type="button" class="btn btn-outline-secondary" >Apply</a>
     </div>
  </div>
